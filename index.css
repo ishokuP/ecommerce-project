@@ -1,6 +1,10 @@
 html{
     scroll-behavior: smooth;
 }
+@font-face {
+  font-family:  "Comic Sans MS", "Comic Sans", cursive;
+  src: url();
+}
 .centerContent{
     font-family:  "Comic Sans MS", "Comic Sans", cursive;
     text-align: center;
@@ -26,9 +30,28 @@ html{
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 99%;
 }
 
 .sticky + .content {
   padding-top: 60px;
+}
+
+.parallelogram{
+  position: absolute;
+  width: 56%;
+  height: 100%;
+  transform: skew(-20deg);
+  background: #555;
+  left: 50%;
+  top: 44%;
+}
+
+
+.firstTitle{
+  position: absolute;
+}
+
+.firstDescription{
+  position: absolute;
 }
