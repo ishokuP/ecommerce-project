@@ -1,25 +1,10 @@
 html{
     scroll-behavior: smooth;
-    background-image: linear-gradient(to bottom, #000000, #fbe3f8);
+    background-color: black;
 }
 
 a{
   text-align: center;
-}
-
-#navbar {
-  overflow: hidden;
-  background-color: #333;
-  text-align: center;
-}
-
-#navbar a {
-  display: inline-block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
 }
 
 .featured{
@@ -36,3 +21,16 @@ a{
 .carFeatured{
   text-align: right;
 }
+.buttonContainer{
+  position: absolute;
+  bottom: -13rem;
+}
+.buttonNav{
+  text-decoration: none;
+  color: black;
+  font-size: 15rem;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+

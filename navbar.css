@@ -1,0 +1,17 @@
+#navbar {
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  #navbar a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 1rem;
+  }
+  
