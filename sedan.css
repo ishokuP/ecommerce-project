@@ -1,0 +1,19 @@
+html{
+    background-color: black;
+}
+.catalogFilter{
+    position: relative;
+    background-color: aquamarine;
+    width: 15%;
+    left: 2vw;
+    height:100%;
+
+}
+
+.catalogContent{
+    position: relative;
+    background-color: blue;
+    left: 20vw;
+    width: 77%;
+    height: 100%;
+}
