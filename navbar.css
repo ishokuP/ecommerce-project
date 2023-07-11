@@ -1,18 +1,30 @@
 
-#navbar {
-    overflow: hidden;
-    text-align: center;
-  }
-  
-  #navbar a {
-    display: inline-block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    text-decoration: underline;
-    text-decoration-thickness: 5px;
-    text-underline-offset: 1rem;
-  }
-  
+.navWrapper {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: 1px solid black;
+}
+
+.navbar {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar img {
+  width: 35px;
+  margin: 0 10px; /* Adjust the margin as needed */
+}
+
+
+.imageSets {
+  margin-left: auto;
+}

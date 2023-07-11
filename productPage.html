@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="productPage.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</head>
+
+<body>
+
+    <div id="navHolder"></div>
+    <div class="layout">
+        <div class="galleryWrap">
+            <div class="bigWrap">
+                <a id="backButton">&lt;</a>
+                <div class="imageGallery">
+                    <div>
+                        <span>
+                            <img src="image/bocchicar.png">
+                        </span>
+                    </div>
+                    <div>
+                        <span>
+                            <img src="image/kitacar.png">
+                        </span>
+                    </div>
+                    <div>
+                        <span>
+                            <img src="image/nijicar.png">
+                        </span>
+                    </div>
+                    <div>
+                        <span>
+                            <img src="image/ryocar.png">
+                        </span>
+                    </div>
+                </div>
+                <a id="forwardButton">&gt;</a>
+            </div>
+            <div class="thumbnails">
+                <div>
+                    <span>
+                        <img src="image/bocchicar.png" onclick="goToSlide(0)">
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <img src="image/kitacar.png" onclick="goToSlide(1)">
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <img src="image/nijicar.png" onclick="goToSlide(2)">
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <img src="image/ryocar.png" onclick="goToSlide(3)">
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="productText">
+            <p id="title">NijiCar</p>
+            <p id="cost">P 42</p>
+
+            <div class="sizeButtons">
+                <p>Sizes</p>
+                <button id="size">US 27</button>
+                <button id="size">US 28</button>
+                <button id="size">US 29</button>
+                <button id="size">US 30</button>
+            </div>
+            <br>
+            <div class="quantityButtons">
+                <label for="quantity">Quantity</label>
+                <div class="quantityOverlay">
+                    <button class="minusQuantity" id="minusQuantity">-</button>
+                    <input type="number" name="quantity" id="quantityInput" min="1" value="1">
+                    <button class="addQuantity" id="addQuantity">+</button>
+                </div>
+
+            </div>
+
+            <div class="purchaseButtons">
+                <button id="addCart" class="addCart">Add to cart</button>
+                <button id="buyNow" class="buyNow">Buy Now</button>
+            </div>
+
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolore accusantium tenetur quasi
+                deserunt quisquam autem quos aperiam recusandae consequatur illo delectus totam, eveniet saepe rerum
+                vero
+                modi provident assumenda!</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="/js/productpage.js"></script>
+</body>
+
+</html>

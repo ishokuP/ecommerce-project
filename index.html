@@ -1,31 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page name something!</title>
-    <link rel = "stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
+
 <body>
-
-    <!-- Navbar -->
     <div id="navHolder"></div>
+    <div class="galleryWrap">
+        <div class="backContainer">
+            <i id="backButton">&lt;</i>
+        </div>
+        <div class="imageGallery">
+            <div>
+                <span>
+                    <h1>bocchicar</h1>
+                    <a href="">
+                        <button>Read More</button>
+                        <img src="image/bocchicar.png">
+                    </a>
+                </span>
+            </div>
+            <div>
+                <span>
+                    <h1>kitacar</h1>
+                    <a href="">
+                        <button>Read More</button>
+                        <img src="image/kitacar.png">
+                    </a>
+                </span>
+            </div>
+            <div>
+                <span>
+                    <h1>nijicar</h1>
+                    <a href="">
+                        <button>Read More</button>
+                        <img src="image/nijicar.png">
+                    </a>
+                </span>
+            </div>
+            <div>
+                <span>
+                    <h1>ryocar</h1>
+                    <a href="">
+                        <button>Read More</button>
+                        <img src="image/ryocar.png">
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="forwardContainer">
+            <i id="forwardButton">&gt;</i>
+        </div>
+    </div>
 
-    <!-- Main Title -->
-    <div class="featured">
-        <a id="featText">featured car here!</a> <br>
-        <a id="featDesc">punchline!</a>
+    <br><br><br>
+
+    <div class="moreInfo">
+        <div class="moreTitle">
+            <h1>our shoes!</h1>
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, eum animi. Atque itaque odit at libero
+            alias iusto quas deserunt eius dicta vero. Libero aspernatur aperiam tenetur modi quae adipisci consectetur,
+            blanditiis corporis iusto a nisi temporibus dolore fugit impedit porro nam culpa delectus distinctio.
+            Repudiandae, odit reprehenderit ratione laborum id eum nisi saepe atque nobis, alias vitae et molestiae! A
+            libero voluptas ab similique maxime porro praesentium esse veritatis totam rerum dolore, minus eos impedit
+            facere facilis? Ea accusantium excepturi maxime qui fugit praesentium impedit voluptas distinctio in
+            aspernatur iste delectus, illo nobis eum eligendi molestiae, corrupti eos libero?</p>
+        <br>
+        <br>
+        <form action="productlist.html">
+            <button id="allButton">All products &rarr;</button>
+        </form>
+        <br>
+        <div class="moreTitle">
+            <h1>our motto</h1>
+        </div>
+        <p>gamble idiots, do you understand if you watch the entire context of all my gambling over 15 months, you'll
+            see this 99.8% big wins. You understand? Look at big wins out of context. Do you understand that you will
+            win? Casinos literally tell you straight up to give you the odds. And you don't have to be a mathematical
+            genius to plug those odds in. They literally say you will win over a period of time. You understand casinos
+            are not profitable for a reason. Get it twisted. It is a way to get rich quick. It is a way to get yourself
+            out of any fucking low points of your life. It will put you in a working rich part of life. Don't come in
+            and just spend $1,000 and win seven mil, right? I spent like four mil to get back seven mil. It is no way to
+            make money, you stupid</p>
     </div>
-    <div class="carFeatured">
-        <img src="image/bocchicar.png" class="carFeatured">
+
+    <div class="bottomWrapper">
+        <h1>Browse By Category</h1><br>
+        <div class="categoryWrapper">
+            <div class="shoeCategory">
+                <a href="productlist.html">
+                    <img src="image/MAN.jpg" class="image" loading="lazy">
+                    <div class="menCategory">
+                        <div class="menText">Men's Shoes</div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="shoeCategory">
+                <a href="productlist.html">
+                    <img src="image/woman.png" class="image" loading="lazy">
+                    <div class="menCategory">
+                        <div class="menText">Women's Shoes</div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="shoeCategory">
+                <a href="productlist.html">
+                    <img src="image/child.png" class="image" loading="lazy">
+                    <div class="menCategory">
+                        <div class="menText">Children's shoes</div>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
-    <div class="buttonContainer">
-        <a href="#" class="buttonNav">&lt</a> 
-        <a>&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160</a>
-        <a href="#" class="buttonNav">&gt</a>
-    </div>
-<script type="text/javascript" src="/js/index.js"></script>
+    <footer>
+        <div class="flexWrapper">
+            <div class="shoesFooter">
+                <h3>Shoes</h3>
+                <div class="shoesCategory">
+                    <ul>
+                        <li><a href="http://">All Shoes</a></li>
+                        <li><a href="http://">Men's Shoes</a></li>
+                        <li><a href="http://">Women's Shoes</a></li>
+                        <li><a href="http://">Children's Shoes</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="paymentFooter">
+                <h3>Payment Methods</h3>
+                <img src="image/cashondelivery.png" alt="">
+                <img src="image/PayPal.svg" alt="" srcset="">
+            </div>
+            <div class="contactFooter">
+                <h3>Contact Us</h3>
+                <div class="emailFooter">
+                    <h5>joshuabmateo@iskolarngbayan.pup.edu.ph</h5>
+                    <h5>joshuapdale@iskolarngbayan.pup.edu.ph</h5>
+                    <a href="http://" id="emailIcon"><img src="image/emailicon.svg" ></a>
+                </div>
+                <div class="addressFooter">
+                    <h3>Cecilia Chapman</h3>
+                    <h3> 711-2880 Nulla St.</h3>
+                    <h3> Mankato Mississippi 96522</h3>
+                    <h3> (257) 563-7401</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="extraDiv">
+            <div class="rightsDiv">
+                <h3>shop name © 4023 :: All rights reserved</h3>
+            </div>
+            <div class="policyDiv">
+                <a href="http://">Refund Policy</a>
+                <a href="http://">Privacy Policy</a>
+                <a href="http://">Website Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="/js/index.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account</title>
+  <link rel="stylesheet" href="createAccount.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+  <div class="loginDiv">
+    <div class="loginText">
+      <h1>Create Account</h1>
+    </div>
+    <div class="loginForms">
+      <form action="" method="get">
+        <div class="halfWidth">
+          <div class="inputWrapper">
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName">
+          </div>
+          <div class="inputWrapper">
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName">
+          </div>
+        </div>
+      </form>
+      <form action="" method="get">
+        <label for="username">Username</label>
+        <input type="text" name="username">
+      </form>
+      <form action="" method="get">
+        <label for="password">Password</label>
+        <input type="password" name="password">
+      </form>
+      <div class="addressForm">
+        <form action="" method="get">
+          <label for="street">Street</label>
+          <input type="text" name="street">
+        </form>
+        <form action="" method="get">
+          <label for="city">City</label>
+          <input type="text" name="city">
+        </form>
+        <div class="provinceZip">
+          <form action="" method="get">
+            <label for="province">Province</label>
+            <input type="text" name="province">
+          </form>
+          <form action="" method="get">
+            <label for="zip">ZIP Code</label>
+            <input type="text" name="zip">
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="buttonContainer">
+      <input type="button" value="Create Account">
+    </div>
+  </div>
+
+  <script src="js/login.js"></script>
+</body>
+
+</html>

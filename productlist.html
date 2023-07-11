@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shoe shop!!</title>
+    <link rel="stylesheet" href="productlist.css">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+    <div id="navHolder"></div>
+    <div class="catalogContainer">
+        <div class="catalogFilter">
+            <input type="text" placeholder="Search.." id="searchBar">
+            <div class="colorFilter">
+                <p onclick="expandFunction(0)">Color<img src="image/downarrow.png" class="arrowdown"></p>
+                <div class="dropdown-menu" id="colorDropdown">
+                    <div>
+                        <input type="checkbox" name="color" id="blackColor" value="Black">
+                        <label for="blackColor">Black</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="color" id="brownColor" value="Brown">
+                        <label for="brownColor">Brown</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="color" id="tanColor" value="Tan">
+                        <label for="tanColor">Tan</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="color" id="whiteColor" value="White">
+                        <label for="whiteColor">White</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="color" id="burgundyColor" value="Burgundy">
+                        <label for="burgundyColor">Burgundy</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="color" id="navyColor" value="Navy">
+                        <label for="navyColor">Navy</label><br><br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="soleFilter">
+                <p onclick="expandFunction(1)">Sole Type<img src="image/downarrow.png" class="arrowdown"></p>
+                <div class="dropdown-menu" id="soleDropdown">
+                    <div>
+                        <input type="checkbox" name="sole" id="leatherSole" value="Leather Sole">
+                        <label for="leatherSole">Leather Sole</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="sole" id="rubberSole" value="Rubber Sole">
+                        <label for="rubberSole">Rubber Sole</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="sole" id="commandoSole" value="Commando Sole">
+                        <label for="commandoSole">Commando Sole</label><br><br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="heelFilter">
+                <p onclick="expandFunction(2)">Heel Height<img src="image/downarrow.png" class="arrowdown"></p>
+                <div class="dropdown-menu" id="heelDropdown">
+                    <div>
+                        <input type="checkbox" name="heel" id="flatHeel" value="Flat">
+                        <label for="flatHeel">Flat</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="heel" id="lowHeel" value="Low Heel">
+                        <label for="lowHeel">Low Heel</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="heel" id="mediumHeel" value="Medium Heel">
+                        <label for="mediumHeel">Medium Heel</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="heel" id="highHeel" value="High Heel">
+                        <label for="highHeel">High Heel</label><br><br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="liningFilter">
+                <p onclick="expandFunction(3)">Lining Material<img src="image/downarrow.png" class="arrowdown"></p>
+                <div class="dropdown-menu" id="liningDropdown">
+                    <div>
+                        <input type="checkbox" name="lining" id="leatherLining" value="Leather Lining">
+                        <label for="leatherLining">Leather Lining</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="lining" id="fabricLining" value="Fabric Lining">
+                        <label for="fabricLining">Fabric Lining</label><br><br>
+                    </div>
+                </div>
+            
+            </div>
+
+            <div class="closureFilter">
+                <p onclick="expandFunction(4)">Closure Type<img src="image/downarrow.png" class="arrowdown"></p>
+                <div class="dropdown-menu" id="closureDropdown">
+                    <div>
+                        <input type="checkbox" name="closure" id="laceUpClosure" value="Lace-Up">
+                        <label for="laceUpClosure">Lace-Up</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="closure" id="slipOnClosure" value="Slip-On">
+                        <label for="slipOnClosure">Slip-On</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="closure" id="buckleClosure" value="Buckle">
+                        <label for="buckleClosure">Buckle</label><br><br>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="toeFilter">
+                <p onclick="expandFunction(5)">Toe Shape<img src="image/downarrow.png" class="arrowdown"></p>
+                <div class="dropdown-menu" id="toeDropdown">
+                    <div>
+                        <input type="checkbox" name="toe" id="roundToe" value="Round Toe">
+                        <label for="roundToe">Round Toe</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="toe" id="squareToe" value="Square Toe">
+                        <label for="squareToe">Square Toe</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="toe" id="pointedToe" value="Pointed Toe">
+                        <label for="pointedToe">Pointed Toe</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="toe" id="almondToe" value="Almond Toe">
+                        <label for="almondToe">Almond Toe</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="toe" id="chiselToe" value="Chisel Toe">
+                        <label for="chiselToe">Chisel Toe</label><br><br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="specialFilter">
+                <p onclick="expandFunction(6)">Special Features<img src="image/downarrow.png" class="arrowdown"></p>
+                <div class="dropdown-menu" id="specialDropdown">
+                    <div>
+                        <input type="checkbox" name="special" id="waterproofFeature" value="Waterproof">
+                        <label for="waterproofFeature">Waterproof</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="special" id="breathableFeature" value="Breathable">
+                        <label for="breathableFeature">Breathable</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="special" id="slipResistantFeature" value="Slip-Resistant">
+                        <label for="slipResistantFeature">Slip-Resistant</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="special" id="veganFeature" value="Vegan (non-leather materials)">
+                        <label for="veganFeature">Vegan (non-leather materials)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="special" id="handcraftedFeature" value="Handcrafted">
+                        <label for="handcraftedFeature">Handcrafted</label><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalogContent">
+            <div class="catalogItem">
+                <div class="catalogImage">
+                    <a href="productPage.html"><img class="container" src="image/ohne.png" loading="lazy"></a>
+                </div>
+                <div class="catalogText">
+                    <h3>
+                        <a href="productPage.html">Shoe name</a>
+                    </h3>
+                    <span>P 2563</span>
+                </div>
+            </div>
+
+            <div class="catalogItem">
+                <div class="catalogImage">
+                    <a href="productPage.html"><img class="container" src="image/ohne.png" loading="lazy"></a>
+                </div>
+                <div class="catalogText">
+                    <h3>
+                        <a href="productPage.html">Shoe name</a>
+                    </h3>
+                    <span>P 2563</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="/js/productlist.js"></script>
+</body>
+
+</html>

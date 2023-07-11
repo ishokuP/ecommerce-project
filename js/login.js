@@ -1,4 +1,4 @@
-// Loads Navbar
-$(function(){
+$(function () {
     $("#navHolder").load("navbar.html");
   });
+  
