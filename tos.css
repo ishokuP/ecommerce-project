@@ -1,0 +1,27 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .refundContainer {
+    outline: 1px solid black;
+
+    margin: 50px;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .refundHeader {
+    text-align: left;
+    margin-bottom: 35px;
+    border-bottom: 1px solid black;
+  }
+  
+  .refundContent {
+    line-height: 1.6;
+  }
+  
