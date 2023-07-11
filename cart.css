@@ -1,0 +1,96 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.cartContainer {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.cartHeader {
+    text-align: initial;
+    margin-bottom: 40px;
+    border-bottom: 1px solid black;
+}
+
+.cartItems {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cartItem {
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid black;
+}
+
+.itemImage img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.itemDetails {
+    flex: 1;
+}
+
+
+
+.removeButton {
+    background-color: white;
+    color: black;
+    outline: 1px solid red;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.removeButton:hover {
+    background-color: red;
+    color: white;
+    transition: all 250ms ease;
+}
+.itemPrice{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+.cartTotal {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.checkoutButton {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.checkoutButton button {
+    border: 0px;
+    background-color: white;
+    padding: 20px 70px;
+    font-size: 20px;
+    text-align: center;
+    outline: 1px solid black;
+}
+
+.checkoutButton button:hover {
+
+    background-color: black;
+    color: white;
+
+
+    outline: 1px solid white;
+    transition: all 250ms ease;
+}

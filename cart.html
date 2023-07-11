@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+    <div class="cartContainer">
+        <div class="cartHeader">
+            <h1>Shopping Cart</h1>
+        </div>
+        <div class="cartItems">
+            <div class="cartItem">
+                <div class="itemImage">
+                    <img src="image/bocchicar.png" alt="Item Image">
+                </div>
+                <div class="itemDetails">
+                    <h2>Product Name</h2>
+                    <p>Quantity: 2</p>
+                    <button class="removeButton">Remove</button>
+                </div>
+                <div class="itemPrice">
+                    <p>$10.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="cartTotal">
+            <h1>Total</h1>
+            <h3>$35.99</h3>
+        </div>
+        <div class="checkoutButton">
+            <button>Checkout</button>
+        </div>
+    </div>
+
+    <script src="js/cart.js"></script>
+</body>
+
+</html>
