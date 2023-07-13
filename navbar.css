@@ -1,8 +1,5 @@
-
 .navWrapper {
-  margin-top: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 40px;
   border-bottom: 1px solid black;
 }
 
@@ -21,7 +18,8 @@
 
 .navbar img {
   width: 35px;
-  margin: 0 10px; /* Adjust the margin as needed */
+  margin: 0 10px;
+  /* Adjust the margin as needed */
 }
 
 
@@ -35,7 +33,55 @@
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted black;
+  vertical-align: middle;
+  transition: top 200ms ease;
+  top: 0px;
 }
+
+.tooltip:hover {
+  top: -5px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-content a:hover {
+  transition: background-color 250ms ease;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#Logout{
+  color: black;
+}
+#Logout:hover{
+  color: white;
+  transition: all 250ms ease;
+
+  background-color: red;
+}
+
+.tooltip:hover .dropdown-content {
+  display: block;
+}
+
+
+.tooltip:hover .dropdown-content {
+  display: block;
+}
+
 
 .tooltip .tooltiptext {
   visibility: hidden;

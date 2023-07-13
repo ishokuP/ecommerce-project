@@ -18,13 +18,22 @@
                 <div class="tooltip"> <a href="cart.html"><img src="image/cart.png"></a>
                     <span class="tooltiptext">Your Cart</span>
                 </div>
-                <div class="tooltip"> <a href="login.html">  <img src="image/account.png"></a>
-                    <span class="tooltiptext">Account</span>
-                </div>
+                <div class="tooltip">
+                    <a onclick="toggleDropdown(event)">
+                      <img src="image/account.png" style="vertical-align: middle;">
+                      <span style="vertical-align: middle;">Hello Josh</span>
+                    </a>
+                    <div class="dropdown-content">
+                      <a href="profile.html">Profile</a>
+                      <a href="settings.html">Settings</a>
+                      <a href="logout.html" id="Logout">Logout</a>
+                    </div>
+
+                  </div>                  
             </div>
         </div>
     </nav>
-    <script src="js/navbar.js" type="text/javascropt"></script>
+    <script  type="text/javascropt" src="js/navbar.js"></script>
 </body>
 
 </html>
